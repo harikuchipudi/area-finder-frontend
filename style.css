@@ -1,0 +1,268 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    /* position: fixed; */
+    /* background-image: url('Designer (1).jpeg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+    margin: 0;
+}
+p{
+    align-items: center;
+}
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.hidden {
+    display: none;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+header {
+    /* position:fixed; */
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #e0e0e0;
+    padding: 2em;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* bottom:500px; Added to position the logo absolutely */
+}
+
+header a{
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+header a:hover {
+    background-color: whitesmoke;
+    color: #1f1f1f;
+    box-shadow: 1px 1px beige;
+}
+
+#title {
+
+}
+
+.res-con {
+    border-radius: 1em;
+    border: 0;
+
+}
+
+
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+#basic-form {
+    overflow: auto;
+    /* margin: 13em; */
+    margin-top: 5em;
+    padding: 2em;
+    z-index: 10;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    /* left: 250px; */
+    /* position: fixed; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 22em;
+    height: 22em;
+    height: auto;
+    color: #e0e0e0;
+}
+
+.mini-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 30em;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    gap: 1em;
+    text-align: left;
+}
+
+.inner-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label {
+    font-weight: bold;
+}
+
+.input-container select,
+.input-container input {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #e0e0e0;
+    outline: none;
+}
+
+.input-container select {
+    cursor: pointer;
+    appearance: none;
+}
+
+
+.circle-button p {
+    margin: 0;
+}
+
+.calculate-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shape-card {
+    display: none; /* Initially hidden */
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.shape-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* #map-container {
+    display: flex;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    /* width: 20em;
+    height: 20em;
+    border: 5px #1f1f1f solid; 
+}*/
+
+#map {
+    /* height: 200px; */
+    height: 100%; /* Map fills the container div */
+    width: 100%;
+    border-radius: 10px;
+}
+
+#card {
+    /* position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 200px; */
+}
+
+#logDistancesBtn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#logDistancesBtn:hover {
+    background-color: #0056b3;
+}
+
+#pointsList {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#area-btn {
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0;
+    border: 0;
+}
+
+#area-btn:hover {
+    box-shadow: #e0e0e0;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+#navigation a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#canvas {
+    border: 1px solid black;
+    cursor: crosshair;
+}
+
+#result-container {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#result-container input {
+    width: 90%;
+    padding: 1em;
+}

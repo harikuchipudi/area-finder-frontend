@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="mapStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div><h2>Find the Area</h2></div>
+        <div id="navigation">
+            <a href="index.html">Basic</a> 
+            <!-- <a href=""></a> -->
+            <a href="graph.html">Graph</a>
+            <a href="map.html">Map</a>     
+
+        </div>
+        <div>
+            <button>Team</button>
+        </div>
+    </header>
+    <div id="map"></div>
+    <div id="hamburger-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div id="sidebar">
+        <h2>Enter the co-ordinates</h2>
+        <ul id="pointsList"></ul>
+        <div id="areaDisplay">Area(Sq Km): </div>
+        <div id="areaSqM">Area (Sq M):</div>
+        <div id="areaAcres">Area (in Acres):</div>
+        <button id="logDistancesBtn">Calculate</button>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="mapScript.js"></script>
+</body>
+</html>

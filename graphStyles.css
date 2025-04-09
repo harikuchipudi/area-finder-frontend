@@ -1,0 +1,90 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background-blend-mode: overlay;
+}
+#container {
+    position: relative;
+    display: inline-block;
+}
+canvas {
+    border: 1px solid black;
+    background-color: white;
+}
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header {
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color:whitesmoke;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#submit-btn {
+    padding: 1em;
+}
+
+main h2{
+    color: #e0e0e0;
+    z-index: 1000;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+
+#main-container {
+    background-color: #e0e0e0;
+    width: 60%;
+    height: 70%;
+    background-image: none;
+    padding: 2em;
+}
+
+#main-container h2{
+    color: #262525;
+}
+
+#btns-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+#res-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#result-text {
+    padding: 1em;
+}

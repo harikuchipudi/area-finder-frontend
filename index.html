@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div id="title">
+            <h1>Area Calculator</h1>
+        </div> 
+        
+<!--    <div id="tema-logo">
+            <button class="circle-button">
+                <p>Team</p>
+            </button>
+        </div> -->
+
+        <div id="navigation">
+            <a href="index.html">Basic Mode</a>
+            <a href="graph.html">Graph</a>
+            <a href="map.html">Map</a>
+        </div>
+
+        <div>
+            <a href="Team.html">Team</a>
+        </div>
+
+    </header>
+    <main>
+    <section id="basic" >
+        <div method="post" id="basic-form">
+            <div class="mini-container">
+                <h3>Find Areaaaaaa</h3>
+                <div class="input-container">
+                    <label>Polygon</label>
+                    <select name="basic-form" id="poly-type">
+                        <option value="">-Select-</option>
+                        <option value="Triangle">Triangle</option>
+                        <option value="Square">Square</option>
+                        <option value="Rectangle">Rectangle</option>
+                        <option value="Trapezoid">Trapezoid</option>
+                        <option value="Circle">Circle</option>
+                    </select>
+                </div>
+        
+                <div class="input-container" id="triangle-inputs" style="display: none;">
+                    <div class="inner-input">
+                        <label>Base</label>
+                        <input type="number" id="triangle-base" placeholder="Enter base">
+                    </div>
+                    <div class="inner-input">
+                        <label>Height</label>
+                        <input type="number" id="triangle-height" placeholder="Enter height">
+                    </div>
+                </div>
+                <div class="input-container" id="square-inputs" style="display: none;">
+                    <label>Side</label>
+                    <input type="number" id="square-side" placeholder="Enter side length">
+                </div>
+        
+                <div class="input-container" id="rectangle-inputs" style="display: none;">
+                    <label>Length</label>
+                    <input type="number" id="rectangle-length" placeholder="Enter length">
+                </br>
+                </br>
+                </br>
+                    <label>Breadth</label>
+                    <input type="number" id="rectangle-breadth" placeholder="Enter breadth">
+                </div>
+        
+                <div class="input-container" id="trapezoid-inputs" style="display: none;">
+                    <label>Base 1</label>
+                    <input type="number" id="trapezoid-base1" placeholder="Enter base 1">
+                </br>
+                </br>
+                </br>
+                    <label>Base 2</label>
+                    <input type="number" id="trapezoid-base2" placeholder="Enter base 2">
+                </br>
+                </br>
+                </br>
+                    <label>Height</label>
+                    <input type="number" id="trapezoid-height" placeholder="Enter height">
+                </div>
+        
+                <div class="input-container" id="circle-inputs" style="display: none;">
+                    <label>Radius</label>
+                    <input type="number" id="circle-radius" placeholder="Enter radius">
+                </div>
+
+                <button id="area-btn">Find Area</button>
+                <div id="result-container">
+                    <input id="area-result" class="res-con" value="processing.........."/>
+                    <!-- <input id="result-from" class="res-con" value="Dont know how I am calcualting........" > -->
+                </div>
+                
+
+            </div>
+
+        </div>
+    </section>
+    <section id="advanced" class="hidden">
+        <div id="graph-container">
+            <h2>Click to Add Points and Draw a Polygon</h2>
+            <canvas id="canvas"></canvas>
+            <button id="reset">Reset</button>
+        </div>
+
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

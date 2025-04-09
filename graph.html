@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartesian Plane</title>
+    <link rel="stylesheet" href="graphStyles.css">
+</head>
+<body>
+    <header>
+        <h2>Area Converter</h2>
+        <div id="navigation">
+            <a href="index.html">Basic</a>
+            <a href="graph.html">Graph</a>
+            <a href="map.html">Map</a>
+        </div>
+        <div>
+            <a href="team.html">Code Vikings</a>
+        </div>
+    </header>
+    <main>
+        <div id="main-container">
+            <h2>Click on the Cartesian Plane to Select Points</h2>
+            <div id="container">
+                <canvas id="canvas" width="500" height="500"></canvas>
+            </div>
+            <div id="btns-container">
+                <button onclick="logVertices()">Get Vertices</button>
+                <button onclick="resetCanvas()">Reset</button>
+                <button id="submit-btn">Find Area</button>
+            </div>
+            <div id="res-container">
+                
+                <input value="Still not calculated" id="result-text">
+            </div>
+            
+            <!-- <div id="container">
+                <canvas id="canvas" width="800" height="600"></canvas>
+            </div>
+            <button id="submit-btn">Find Area</button>
+            <button onclick="resetCanvas()">Reset</button>
+            <script src="script.js"></script> -->
+            
+            
+
+        </div>
+        <script src="graphScript.js"></script>
+    </main>
+</body>
+</html>
