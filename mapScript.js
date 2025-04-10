@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const map = L.map('map').setView([13.0827, 80.2707], 13);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
+    const base_url = "https://area-calculator-backend.onrender.com";
     const pointsList = document.getElementById('pointsList');
     const logDistancesBtn = document.getElementById('logDistancesBtn');
     const hamburgerMenu = document.getElementById('hamburger-menu');
@@ -113,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function findPlotArea() {
         try {
             console.log(coordinatesData);
-          const response = await fetch("http://localhost:8084/api/shapes/mapArea", {
+          const response = await fetch(`${base_url}/api/shapes/mapArea`, {
             method: "POST", // HTTP POST method
             headers: {
               "Content-Type": "application/json" // Specify JSON content type
