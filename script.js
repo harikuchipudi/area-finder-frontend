@@ -4,12 +4,13 @@ document.body.style.backgroundImage = "url(https://img.freepik.com/free-vector/s
 document.body.style.backgroundImage = "url(https://img.freepik.com/premium-vector/doodle-math-objects-border_1639-25785.jpg?ga=GA1.1.866335579.1742875381&semt=ais_hybrid)";
 document.body.style.backgroundImage = "url(https://img.freepik.com/free-vector/back-school-background-hand-drawn-design_23-2148613801.jpg?ga=GA1.1.866335579.1742875381&semt=ais_hybrid)";
 
+const base_url = "https://area-calculator-backend.onrender.com";
+
 
 var polyType_ref = 0;
 document.getElementById('poly-type').addEventListener('change', function() {
     const polyType = this.value;
     polyType_ref = this.value;
-    
     // Hide all input containers initially
     document.getElementById('triangle-inputs').style.display = 'none';
     document.getElementById('square-inputs').style.display = 'none';
@@ -43,7 +44,7 @@ document.getElementById("area-btn").addEventListener('click', async function () 
         const base = document.getElementById("triangle-base").value;
         const height = document.getElementById("triangle-height").value;
         try {
-            const response = await fetch("http://localhost:8084/api/shapes/triangle", {
+            const response = await fetch(`${base_url}/api/shapes/triangle`, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
@@ -75,7 +76,7 @@ document.getElementById("area-btn").addEventListener('click', async function () 
         const side = document.getElementById("square-side").value;
         try {
             // setInterval(animateSquare, 500); 
-            const response = await fetch("http://localhost:8084/api/shapes/square", {
+            const response = await fetch(`${base_url}/api/shapes/square`, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
@@ -100,7 +101,7 @@ document.getElementById("area-btn").addEventListener('click', async function () 
         const length = document.getElementById("rectangle-length").value;
         const width = document.getElementById("rectangle-breadth").value;
         try {
-            const response = await fetch("http://localhost:8084/api/shapes/rectangle", {
+            const response = await fetch(`${base_url}/api/shapes/rectangle`, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
@@ -127,7 +128,7 @@ document.getElementById("area-btn").addEventListener('click', async function () 
         const trapezoid_base2 = document.getElementById("trapezoid-base2").value;
         const trapezoid_height = document.getElementById("trapezoid-height").value;
         try {
-            const response = await fetch("http://localhost:8084/api/shapes/trapezoid", {
+            const response = await fetch(`${base_url}/api/shapes/trapezoid`, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
@@ -153,7 +154,7 @@ document.getElementById("area-btn").addEventListener('click', async function () 
     else if(polygonType == "Circle"){
         const radius = document.getElementById("circle-radius").value;
         try {
-            const response = await fetch("http://localhost:8084/api/shapes/circle", {
+            const response = await fetch(`${base_url}/api/shapes/circle`, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
