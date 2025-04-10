@@ -4,6 +4,8 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 let points = [];
 
+const base_url = "https://area-calculator-backend.onrender.com";
+
 // Function to draw the Cartesian plane with labels
 function drawCartesianPlane() {
     const width = canvas.width;
@@ -129,7 +131,7 @@ console.log(points);
 async function findAreaOfUnKnownPolygon(points) {
     try {
         // Make the fetch call to the API
-        const response = await fetch("http://localhost:8084/api/shapes/polygon", {
+        const response = await fetch(`${base_url}/api/shapes/polygon`, {
             method: "POST", 
             headers: {
                 "Content-Type": "application/json" 
